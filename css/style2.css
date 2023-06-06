@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9e9ea;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: white;
+    border: #dcdcdc solid 1px;
+    margin: 100px;
+    border-radius: 5px;
+}
+
+/* ESTILO GENERICO */
+
+.container header.cabecalho {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+}
+
+main .aula {
+    background-color: white;
+    text-align: center;
+}
+
+.aula .botoes button {
+    outline: none;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.aula .botoes .btnAssistir {
+    background-color: #246897;
+    color: white;
+}
+
+.aula .botoes .btnAudio {
+    border: #d2d1d1 solid 1px;
+    background-color: #ededed;
+    color: #5e5e5e;
+}
+
+/* ESTILO ESPECÍFICO */
+
+.grid main {
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid main .aula {
+    width: 300px;
+    border: #ededed solid 1px;
+    border-radius: 5px;
+}
+
+.container header.cabecalho,
+.grid main .aula .cabecalho {
+    background-color: rgb(0, 83, 135);
+    background: linear-gradient(36deg, rgba(0, 83, 135, 1) 0%, rgb(27, 128, 182) 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.grid main .aula .conteudo {
+    margin-bottom: 40px;
+}
+
+.grid main .aula .conteudo .cabecalho {
+    margin-bottom: 20px;
+}
+
+.grid main .aula .conteudo .data {
+    color: #626262;
+}
+
+.grid main .aula .conteudo .descricao,
+.grid main .aula .conteudo .icon-grande {
+    color: #909090;
+}
+
+.grid main .aula .conteudo .icon-grande {
+    font-size: 3em;
+}
+
+.grid main .aula .btnAudio {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* Muda a ordem do .icon-grande no modo LIST */
+@media screen and (min-width:300px) {
+    .list main .aula .conteudo {
+        display: flex;
+    }
+
+    .list main .aula .conteudo .cabecalho {
+        order: 2;
+    }
+
+    .list main .aula .conteudo .icon-grande {
+        order: 1;
+        margin-right: 10px;
+    }
+
+    .list main .aula .conteudo .data {
+        order: 3;
+    }
+
+    .list main .aula .conteudo .descricao {
+        order: 4;
+    }
+}
+
+.list main {
+    flex-direction: column;
+}
+
+.list main .aula {
+    display: flex;
+    border-bottom: #ededed solid 1px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.list main .aula .conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    color: #005387;
+}
+
+.list main .aula .conteudo .data::before {
+    content: "-";
+    margin: 0 7px;
+}
+
+.list main .aula .conteudo .descricao {
+    display: block;
+    color: #909090;
+    width: 100%;
+}
+
+.list main .aula .botoes {
+    display: flex;
+}
+
+.list main .aula .botoes .btnAudio {
+    margin-left: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .container>header {
+        pointer-events: none;
+    }
+
+    /*Bloqueando o clique no HEADER*/
+    .container {
+        margin: 20px;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    .grid main .aula {
+        width: 100%;
+    }
+}
