@@ -1,3 +1,9 @@
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
 # Modo Grid ou List com Javascript
 Este é um projeto de estudo desenvolvido em Javascrip, HTML e CSS, inspirado numa parte da plataforma EAD da faculdade.
 O meu objetivo era reproduzir uma parte específica da plataforma onde fica uma lista de aulas online. Quando clicamos na barra de título "AULAS/PALESTRAS" é possível alterar o layout para uma visão em GRADE ou LISTA.
