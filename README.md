@@ -15,6 +15,8 @@ Este projeto consiste em um **Caso de Estudo (Study Case)** focado no desenvolvi
 
 O objetivo principal do estudo foi explorar a flexibilidade estrutural do CSS moderno aliada à manipulação do Document Object Model (DOM) com JavaScript puro.
 
+👀 <a href="https://lucianosergiodasilva.github.io/modo-grid-ou-list/" target="_blank">Clique aqui para ver o projeto funcionando</a>
+
 ---
 
 ## 🎯 O Problema que o Projeto Resolve
